@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "ML-driven cost optimization for fintech"
 authors = ["You infrastructure.swati@gmail.com"]
 license = "Apache-2.0"
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -17,6 +18,7 @@ pandas = "^2.1.0"
 numpy = "^1.26.0"
 scikit-learn = "^1.3.2"
 xgboost = "^2.0.0"
+httpx = "^0.25.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.0"

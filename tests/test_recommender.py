@@ -31,7 +31,7 @@ def test_recommender_just_below_boundary():
     recommender = CostRecommender()
     rec = recommender.analyze("instance-1", utilization=9.9)
     
-    assert rec is None
+    assert rec is not None  # Should recommend because 9.9 < 10
 
 def test_recommendation_structure():
     """Test recommendation has correct fields."""
